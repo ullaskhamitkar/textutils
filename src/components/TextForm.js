@@ -48,13 +48,13 @@ export default function TextForm(props) {
           id="myBox"
           rows="8"
         ></textarea>
-        <button className="btn btn-primary my-2" onClick={handleUpChange}>
+        <button disabled={text.length === 0} className="btn btn-primary my-2" onClick={handleUpChange}>
           Convert to uppercase
         </button>{" "}
-        <button className="btn btn-secondary my-2" onClick={handleLowChange}>
+        <button disabled={text.length === 0} className="btn btn-secondary my-2" onClick={handleLowChange}>
           Convert to lowercase
         </button>{" "}
-        <button className="btn btn-danger my-2" onClick={handleClear}>
+        <button disabled={text.length === 0} className="btn btn-danger my-2" onClick={handleClear}>
           Clear Text
         </button>
       </div>
